@@ -111,7 +111,7 @@ export async function resolveOptions(
   }
 
   return {
-    path,
-    template,
-  } satisfies ResolvedOptions
+    path: path as string,
+    template: template as TemplateOption,
+  }
 }
